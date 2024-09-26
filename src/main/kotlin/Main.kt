@@ -110,3 +110,33 @@ fun main() {
     Thread.sleep(2000)
     println("Fin")
 }
+
+/*
+*        ============================================DUDAS============================================
+*DUDA 1
+*
+*lateinit no tiene mucho sentido porque es una lista mutable y se puede cambiar, sino si que tendria sentido
+*
+* ===========================================================================================================
+*
+* DUDA 2
+*
+* en setOnUpdateClienteListener(listener: (String, String) ->Unit) devuelve unit porque el evento que dispara el
+* funcionamiento de la funcion, updateClient, es void.
+*
+* ==============================================================================================================
+*
+* DUDA 3
+*
+* en un ejemplo real existiría un metodo mostrarAdd? si es así como se haría
+*
+* fun onButtonClickAdd() {
+        val dialogo = ClienteDialogFragment()
+        dialogo.setOnClienteAddedListener { id, nombre ->
+            addCliente(id, nombre)
+        }
+        dialogo.mostrarAdd()---------------------
+    }
+    *
+    *
+*/
